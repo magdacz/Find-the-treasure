@@ -1,7 +1,7 @@
 var mapWidth = 600;
 var mapHeight = 600;
 var counterClicks = 0;
-var limitClicks = 15;
+var limitClicks = 100;
 
 //jako argument później przekażemy mapWidth i mapHeight
 function randomNumber(size) {
@@ -61,7 +61,10 @@ $('.map').click(function(e) {
     $('.clicks').text(`Pozostało Ci ${limitClicks - counterClicks} kliknięć!`)
     
     if (distance < 8) {
-        alert('Skarb został znaleziony po' + counterClicks + 'kliknięciach')
+        alert('Skarb został znaleziony po' + counterClicks + 'kliknięciach');
+        $('.distance').text("Gratulacje!");
+        $('.clicks').text("")
+    
   }
 })
 
