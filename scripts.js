@@ -1,7 +1,7 @@
 var mapWidth = 600;
 var mapHeight = 600;
 var counterClicks = 0;
-var limitClicks = 100;
+var limitClicks = 25;
 
 //jako argument później przekażemy mapWidth i mapHeight
 function randomNumber(size) {
