@@ -19,9 +19,9 @@ var treasure = {
 //Obliczanie odległości między kliknięciem a celem
 //offsetX - szerokość na jakiej nastąpiło zdarzenie
 //offsetY - wysokość na jakiej nastąpiło zdarzenie
-function calculateDistance(event, goal) {
-  var distanceX = event.offsetX - goal.x;
-  var distanceY = event.offsetY - goal.y;
+function calculateDistance(event, treasure) {
+  var distanceX = event.offsetX - treasure.x;
+  var distanceY = event.offsetY - treasure.y;
   
   //korzystamy z twierdzenia Pitagorasa
   //Math.sqrt - zwraca pierwiastek kwadratowy liczby
